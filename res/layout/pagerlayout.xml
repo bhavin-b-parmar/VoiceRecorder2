@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+		<!-- Allows you to show different pages in one view by paging them -->
+    	<android.support.v4.view.ViewPager
+			    android:id="@+id/pager"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent">
+			    
+	`				<android.support.v4.view.PagerTabStrip
+				        android:id="@+id/pager_tab_strip"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="top"
+				        android:background="@color/white"
+				        android:textColor="@color/color"
+				        android:paddingTop="8dp"
+				        android:paddingBottom="11dp" />
+					
+	</android.support.v4.view.ViewPager>
+
+
+
+</RelativeLayout>

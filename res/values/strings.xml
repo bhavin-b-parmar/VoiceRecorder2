@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VoiceRecorder2</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="audifile">AudioFile</string>
+    <color name="color">#000000</color>
+    <color name="blue">#66ccff</color>
+    <color name="litegray">#bebebe</color>
+    
+    <drawable name="backcolor">#000000</drawable>
+    <color name="white">#ffffff</color>
+     <string name="category">Category</string>
+     <string name="desc">Description</string>
+     <string name="clipNmae">ClipName</string>
+     <string name="clipTime">2.00</string>
+     <string name="catfmly">CategoryFamily</string>
+     <string name="cattime">1.00</string>
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backcolor"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/sprCategory"
+        android:layout_width="30dp"
+        android:layout_height="40dp" 
+        android:layout_alignLeft="@+id/textView_Category"
+        android:layout_alignRight="@+id/editTextFileName"
+        android:layout_below="@+id/textView_Category"
+        android:background="@color/litegray"
+         android:textColor="@color/color"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dip"
+         android:layout_marginRight="5dip"
+        tools:listitem="@android:layout/simple_spinner_item" />
+
+    <TextView
+        android:id="@+id/textView_Category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextFileName"
+        android:layout_below="@+id/editTextFileName"
+        android:layout_marginTop="20dp"
+        android:text="Category"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/editTextFileName"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:textSize="18sp" 
+        android:layout_alignLeft="@+id/textView_clipName"
+        android:layout_below="@+id/textView_clipName"
+         android:textColor="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+    />
+
+    <TextView
+        android:id="@+id/textView_clipName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Clip Name"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/editTagName"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView_labels"
+        android:layout_below="@+id/textView_labels"
+      
+        android:ems="10"
+        android:linksClickable="true"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sprCategory"
+        android:layout_below="@+id/sprCategory"
+        android:layout_marginTop="17dp"
+        android:text="Labels"
+        android:textColor="@color/white"
+        android:textSize="12dp" 
+        android:background="@color/color"/>
+
+    <ImageButton
+        android:id="@+id/imageButton_addcategory"
+        android:layout_width="30dp"
+        android:layout_height="10dp"
+        android:layout_above="@+id/textView_labels"
+        android:layout_alignTop="@+id/sprCategory"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/sprCategory"
+        android:src="@drawable/add"
+          />
+
+    <ListView
+        android:id="@+id/listView_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+       android:cacheColorHint="#ffffff"
+        android:layout_below="@+id/editTagName"
+        android:textColor="@color/white" 
+         >
+
+    </ListView>
+</RelativeLayout>
